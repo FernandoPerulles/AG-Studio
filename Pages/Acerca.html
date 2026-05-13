@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Andrés García — Acerca de Mi</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="../Style/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+    <!-- NAV -->
+    <nav id="main-nav">
+        <a href="../index.html" class="nav-name">Andrés <span>García</span></a>
+            <ul class="nav-links">
+                <li><a href="Faq.html">Preguntas frecuentes</a></li>
+                <li><a href="../index.html#contacto">Contacto</a></li>
+            </ul>
+              <!-- <a href="#servicios" class="nav-cta">Ver Programas</a> -->
+        <button class="nav-hamburger" id="hamburger" aria-label="Menú" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobile-menu">
+    <a href="#quien"       onclick="closeMenu()">Quién soy</a>
+    <a href="#servicios"   onclick="closeMenu()">Servicios</a>
+    <a href="#metodo"      onclick="closeMenu()">Método</a>
+    <a href="#testimonios" onclick="closeMenu()">Resultados</a>
+    <a href="#contacto"    onclick="closeMenu()">Contacto</a>
+    <a href="#servicios" class="m-cta" onclick="closeMenu()">Ver Programas →</a>
+    </div>
+
+    <!-- QUIÉN ES -->
+    <section id="quien" class="reveal">
+    <div class="s-tag">El instructor</div>
+    <h2>Treinta años<br><em>dentro del micrófono.</em></h2>
+    <div class="quien-grid">
+        <div>
+        <div class="quien-card">
+            <div class="quien-initial">AG</div>
+            <div class="quien-name">Andrés García</div>
+            <div class="quien-title">Actor de Doblaje · Instructor de Voz</div>
+            <div class="quien-stats">
+            <div class="qs">
+                <div class="qs-num">15+</div>
+                <div class="qs-label">Años en cabina</div>
+            </div>
+            <div class="qs">
+                <div class="qs-num">80+</div>
+                <div class="qs-label">Producciones</div>
+            </div>
+            <div class="qs">
+                <div class="qs-num">500+</div>
+                <div class="qs-label">Alumnos formados</div>
+            </div>
+            <div class="qs">
+                <div class="qs-num">100%</div>
+                <div class="qs-label">Online · Presencial</div>
+            </div>
+            </div>
+        </div>
+        <div class="cred-box">
+            <div class="cb-label">Créditos destacados</div>
+            <div class="cb-items">
+            <div class="cb-item">
+                <div class="cb-dot"></div>
+                <div class="cb-text"><strong>Happy Hogan</strong> — Universo Cinematográfico Marvel</div>
+            </div>
+            <div class="cb-item">
+                <div class="cb-dot"></div>
+                <div class="cb-text"><strong>Homelander</strong> — The Boys, Amazon Prime</div>
+            </div>
+            <div class="cb-item">
+                <div class="cb-dot"></div>
+                <div class="cb-text">+80 producciones de cine, series y animación</div>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="quien-bio">
+        <p>
+            Más de quince años frente a un micrófono profesional te enseñan algo que ningún libro puede: <em>cómo suena la diferencia entre una voz que conecta y una que no.</em>
+        </p>
+        <div class="quien-pull">
+            "No enseño a imitar voces de actor. Enseño a encontrar la tuya propia y hacerla funcionar para lo que tú necesitas comunicar."
+        </div>
+        <p>
+            La metodología que Andrés desarrolló nació de una observación simple: <strong>los problemas de comunicación que tenía frente al micrófono eran exactamente los mismos que tenía el emprendedor en su pitch, el youtuber en su intro y el maestro en su clase.</strong>
+        </p>
+        <p>
+            La técnica de doblaje profesional —respiración, articulación, proyección, ritmo— resulta ser el entrenamiento más eficiente para cualquier persona que necesite usar su voz como herramienta de trabajo. No importa si nunca has pisado una cabina de grabación.
+        </p>
+        <a href="#servicios" class="btn-primary" style="margin-top:12px;">Ver Programas</a>
+        </div>
+    </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="ft-name">Andrés <span>García</span></div>
+            <ul class="ft-links">
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">TikTok</a></li>
+                <li><a href="#">YouTube</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Spotify</a></li>
+            </ul>
+        <div class="ft-right">© 2026 Andrés García<br>Todos los derechos reservados</div>
+    </footer>
+
+
+        <script>
+
+        // ── NAV SCROLL ──
+        window.addEventListener('scroll', () => {
+        document.getElementById('main-nav').classList.toggle('scrolled', scrollY > 40);
+        });
+
+        // ── AUDIENCE TABS ──
+        function switchAudience(id, btn) {
+        document.querySelectorAll('.an-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.audience-panel').forEach(p => p.classList.remove('active'));
+        btn.classList.add('active');
+        document.getElementById('panel-' + id).classList.add('active');
+        }
+
+        // ── FAQ ──
+        function toggleFaq(btn) {
+        const item = btn.parentElement;
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+        }
+
+        // ── SCROLL REVEAL ──
+        const observer = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.08 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // ── MOBILE MENU ──
+        function toggleMenu() {
+        const menu = document.getElementById('mobile-menu');
+        const btn  = document.getElementById('hamburger');
+        menu.classList.toggle('open');
+        btn.classList.toggle('open');
+        document.body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
+        }
+        function closeMenu() {
+        document.getElementById('mobile-menu').classList.remove('open');
+        document.getElementById('hamburger').classList.remove('open');
+        document.body.style.overflow = '';
+        }
+        // Close menu on resize to desktop
+        window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) closeMenu();
+        });
+        </script>
+
+    </body>
+</html>

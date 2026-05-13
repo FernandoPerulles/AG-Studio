@@ -38,16 +38,6 @@
 <section id="hero">
     <div class="hero-right">
         <div class="arc-container" id="arcs"></div>
-        <div class="hero-mic">
-            <span class="mic-symbol">🎙️</span>
-            <div class="hero-credential">
-                <span class="cred-label">Créditos de industria</span>
-                <div class="cred-names">
-                    Happy Hogan · UCM<br>
-                    Homelander · The Boys
-                </div>
-            </div>
-        </div>
     </div>
     
     <div class="hero-left">
@@ -115,46 +105,46 @@
         </a>
       </div>
     </div>
-    <form class="contact-form" onsubmit="return false">
+    <form class="contact-form" action="https://formspree.io/f/SU_ID_AQUI" method="POST">
       <div class="cf-row">
         <div class="cf-group">
           <label class="cf-label">Nombre</label>
-          <input type="text" placeholder="Tu nombre completo">
+          <input type="text" name="nombre" placeholder="Tu nombre completo" required>
         </div>
         <div class="cf-group">
           <label class="cf-label">Correo</label>
-          <input type="email" placeholder="tu@correo.com">
+          <input type="email" name="email" placeholder="tu@correo.com" required>
         </div>
       </div>
       <div class="cf-group">
         <label class="cf-label">Me describe mejor como</label>
-        <select>
+        <select name="perfil">
           <option value="">Selecciona tu perfil</option>
-          <option>Creador de contenido (YouTube, podcast, redes)</option>
-          <option>Emprendedor / Profesionista</option>
-          <option>Ejecutivo o líder de equipo</option>
-          <option>Estudiante o académico</option>
-          <option>Docente o instructor</option>
-          <option>Empresa (capacitación corporativa)</option>
-          <option>Otro</option>
+          <option value="creador">Creador de contenido (YouTube, podcast, redes)</option>
+          <option value="emprendedor">Emprendedor / Profesionista</option>
+          <option value="ejecutivo">Ejecutivo o líder de equipo</option>
+          <option value="estudiante">Estudiante o académico</option>
+          <option value="docente">Docente o instructor</option>
+          <option value="empresa">Empresa (capacitación corporativa)</option>
+          <option value="otro">Otro</option>
         </select>
       </div>
       <div class="cf-group">
         <label class="cf-label">Me interesa</label>
-        <select>
+        <select name="interes">
           <option value="">¿Qué programa te interesa?</option>
-          <option>Programa Voz para Creadores</option>
-          <option>Programa Voz de Impacto (Profesionales)</option>
-          <option>Taller Blog a Audio</option>
-          <option>Mentoría 1 a 1</option>
-          <option>Capacitación Corporativa</option>
-          <option>Locución / Voz en off</option>
-          <option>Aún no lo tengo claro, quiero orientación</option>
+          <option value="creadores">Programa Voz para Creadores</option>
+          <option value="impacto">Programa Voz de Impacto (Profesionales)</option>
+          <option value="blog-audio">Taller Blog a Audio</option>
+          <option value="mentoria">Mentoría 1 a 1</option>
+          <option value="corporativa">Capacitación Corporativa</option>
+          <option value="locucion">Locución / Voz en off</option>
+          <option value="orientacion">Aún no lo tengo claro, quiero orientación</option>
         </select>
       </div>
       <div class="cf-group">
-        <label class="cf-label">Cuéntame algo (opcional)</label>
-        <textarea placeholder="¿Para qué usas tu voz hoy? ¿Qué te gustaría mejorar?"></textarea>
+        <label class="cf-label">Mensaje</label>
+        <textarea name="mensaje" placeholder="¿Para qué usas tu voz hoy? ¿Qué te gustaría mejorar?"></textarea>
       </div>
       <button type="submit" class="btn-primary" style="width:100%; padding:18px; font-size:12px;">
         Enviar → Andrés responde en &lt;24 hrs

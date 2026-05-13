@@ -1,130 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Andrés García — Preguntas frecuentes</title>
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="stylesheet" href="../Style/style.css">
-            <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400&display=swap" rel="stylesheet">    
-    </head>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrés García — Preguntas frecuentes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="../Style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,600;0,800;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
 
-    <body>
-    <!-- NAV -->
-    <nav id="main-nav">
-        <a href="../index.html" class="nav-name">Andrés <span>García</span></a>
-            <ul class="nav-links">
-                <li><a href="Acerca.html">Quién soy</a></li>
-                <li><a href="../index.html#contacto">Contacto</a></li>
-            </ul>
-              <!-- <a href="#servicios" class="nav-cta">Ver Programas</a> -->
-        <button class="nav-hamburger" id="hamburger" aria-label="Menú" onclick="toggleMenu()">
-            <span></span><span></span><span></span>
-        </button>
-    </nav>
+<!-- NAV -->
+<nav id="main-nav">
+  <a href="../index.html" class="nav-name">Andrés <span>García</span></a>
+  <ul class="nav-links">
+    <li><a href="Acerca.html">Quién soy</a></li>
+    <li><a href="../index.html#contacto">Contacto</a></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburger" aria-label="Menú" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
 
-    <!-- MOBILE MENU -->
-    <div class="mobile-menu" id="mobile-menu">
-        <a href="#quien"       onclick="closeMenu()">Quién soy</a>
-        <a href="#servicios"   onclick="closeMenu()">Servicios</a>
-        <a href="#metodo"      onclick="closeMenu()">Método</a>
-        <a href="#testimonios" onclick="closeMenu()">Resultados</a>
-        <a href="#contacto"    onclick="closeMenu()">Contacto</a>
-        <a href="#servicios" class="m-cta" onclick="closeMenu()">Ver Programas →</a>
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="Acerca.html" onclick="closeMenu()">Quién soy</a>
+  <a href="Faq.html"    onclick="closeMenu()">Preguntas frecuentes</a>
+  <a href="../index.html#contacto" onclick="closeMenu()">Contacto</a>
+</div>
+
+<!-- FAQ -->
+<section id="faq" class="reveal" style="padding-top: 140px;">
+  <div class="s-tag">Preguntas frecuentes</div>
+  <h2>Todo lo que<br><em>necesitas saber</em> antes.</h2>
+  <div class="faq-wrap">
+    <div class="faq-aside">
+      <p style="margin-bottom: 20px;">Si tu pregunta no está aquí, escríbenos directamente por WhatsApp para una respuesta inmediata.</p>
+      <a href="https://wa.me/5211234567890?text=Hola%20Andrés,%20tengo%20una%20duda%20sobre%20tus%20servicios..." target="_blank" class="btn-primary" style="display: block; text-align: center; text-decoration: none;">Chatear por WhatsApp ↗</a>
     </div>
-        <!-- FAQ -->
-        <section id="faq" class="reveal">
-        <div class="s-tag">Preguntas frecuentes</div>
-        <h2>Todo lo que<br><em>necesitas saber</em> antes.</h2>
-        <div class="faq-wrap">
-            <div class="faq-aside">
-            <p>Si tu pregunta no está aquí, escríbenos directamente. Respondemos en menos de 24 horas.</p>
-            <a href="#contacto" class="btn-outline">Escribir a Andrés</a>
-            </div>
-            <div>
-            <div class="faq-item">
-                <button class="faq-q" onclick="toggleFaq(this)">¿Necesito experiencia previa o conocimientos de actuación?<span class="faq-icon">+</span></button>
-                <div class="faq-a">No. Los programas están diseñados para personas que nunca han trabajado su voz de forma profesional. El punto de partida es tu voz tal como es hoy, con tus hábitos actuales.</div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q" onclick="toggleFaq(this)">¿Cómo funciona el formato online?<span class="faq-icon">+</span></button>
-                <div class="faq-a">Las sesiones online se realizan por videollamada. Solo necesitas micrófono (el de tu laptop o audífonos funciona para empezar), cámara y buena conexión. Se graba cada sesión para que puedas revisarla después.</div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q" onclick="toggleFaq(this)">¿Cuánto tiempo tarda en verse resultados?<span class="faq-icon">+</span></button>
-                <div class="faq-a">La mayoría de los alumnos reporta cambios perceptibles desde la primera o segunda sesión. Los resultados consolidados —cambios de hábito que se mantienen solos— generalmente llegan entre la cuarta y sexta sesión.</div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q" onclick="toggleFaq(this)">¿Se entrega constancia o certificado?<span class="faq-icon">+</span></button>
-                <div class="faq-a">Sí. Al completar cualquier programa recibes una constancia digital con firma de Andrés, descripción del contenido y horas de formación. Válida para incluir en LinkedIn o tu portafolio profesional.</div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-q" onclick="toggleFaq(this)">¿Los programas corporativos se pueden adaptar a nuestra empresa?<span class="faq-icon">+</span></button>
-                <div class="faq-a">Sí, totalmente. El formato corporativo se diseña a la medida del equipo, su industria y sus objetivos específicos de comunicación. La cotización incluye diagnóstico previo sin costo.</div>
-            </div>
-            </div>
-        </div>
-        </section>
+    <div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">¿Necesito experiencia previa o conocimientos de actuación?<span class="faq-icon">+</span></button>
+        <div class="faq-a">No. Los programas están diseñados para personas que nunca han trabajado su voz de forma profesional. El punto de partida es tu voz tal como es hoy, con tus hábitos actuales.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">¿Cómo funciona el formato online?<span class="faq-icon">+</span></button>
+        <div class="faq-a">Las sesiones online se realizan por videollamada. Solo necesitas micrófono (el de tu laptop o audífonos funciona para empezar), cámara y buena conexión. Se graba cada sesión para que puedas revisarla después.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">¿Cuánto tiempo tarda en verse resultados?<span class="faq-icon">+</span></button>
+        <div class="faq-a">La mayoría de los alumnos reporta cambios perceptibles desde la primera o segunda sesión. Los resultados consolidados —cambios de hábito que se mantienen solos— generalmente llegan entre la cuarta y sexta sesión.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">¿Se entrega constancia o certificado?<span class="faq-icon">+</span></button>
+        <div class="faq-a">Sí. Al completar cualquier programa recibes una constancia digital con firma de Andrés, descripción del contenido y horas de formación. Válida para incluir en LinkedIn o tu portafolio profesional.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">¿Los programas corporativos se pueden adaptar a nuestra empresa?<span class="faq-icon">+</span></button>
+        <div class="faq-a">Sí, totalmente. El formato corporativo se diseña a la medida del equipo, su industria y sus objetivos específicos de comunicación. La cotización incluye diagnóstico previo sin costo.</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <!-- FOOTER -->
-        <footer>
-        <div class="ft-name">Andrés <span>García</span></div>
-        <ul class="ft-links">
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">TikTok</a></li>
-            <li><a href="#">YouTube</a></li>
-            <li><a href="#">LinkedIn</a></li>
-            <li><a href="#">Spotify</a></li>
-        </ul>
-        <div class="ft-right">© 2026 Andrés García<br>Todos los derechos reservados</div>
-        </footer>
+<!-- FOOTER -->
+<footer>
+  <div class="ft-name">Andrés <span>García</span></div>
+  <ul class="ft-links">
+    <li><a href="#">Instagram</a></li>
+    <li><a href="#">LinkedIn</a></li>
+    <li><a href="#">Spotify</a></li>
+  </ul>
+  <div class="ft-right">© 2026 Andrés García<br>Todos los derechos reservados</div>
+</footer>
 
-        <script>
-            // ── NAV SCROLL ──
-            window.addEventListener('scroll', () => {
-            document.getElementById('main-nav').classList.toggle('scrolled', scrollY > 40);
-            });
-
-            // ── AUDIENCE TABS ──
-            function switchAudience(id, btn) {
-            document.querySelectorAll('.an-btn').forEach(b => b.classList.remove('active'));
-            document.querySelectorAll('.audience-panel').forEach(p => p.classList.remove('active'));
-            btn.classList.add('active');
-            document.getElementById('panel-' + id).classList.add('active');
-            }
-
-            // ── FAQ ──
-            function toggleFaq(btn) {
-            const item = btn.parentElement;
-            const isOpen = item.classList.contains('open');
-            document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-            if (!isOpen) item.classList.add('open');
-            }
-
-            // ── SCROLL REVEAL ──
-            const observer = new IntersectionObserver(entries => {
-            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-            }, { threshold: 0.08 });
-            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-            // ── MOBILE MENU ──
-            function toggleMenu() {
-            const menu = document.getElementById('mobile-menu');
-            const btn  = document.getElementById('hamburger');
-            menu.classList.toggle('open');
-            btn.classList.toggle('open');
-            document.body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
-            }
-            function closeMenu() {
-            document.getElementById('mobile-menu').classList.remove('open');
-            document.getElementById('hamburger').classList.remove('open');
-            document.body.style.overflow = '';
-            }
-            // Close menu on resize to desktop
-            window.addEventListener('resize', () => {
-            if (window.innerWidth > 768) closeMenu();
-            });
-        </script>
-
-    </body>
+<script src="../Script/main.js"></script>
+</body>
 </html>

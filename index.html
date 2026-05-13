@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrés García — Voz & Comunicación</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="Style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="main-nav">
+  <a href="#" class="nav-name">Andrés <span>García</span></a>
+  <ul class="nav-links">
+    <li><a href="#quien">Quién soy</a></li>
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#metodo">Método</a></li>
+    <li><a href="#testimonios">Resultados</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+  <a href="#servicios" class="nav-cta">Ver Programas</a>
+  <button class="nav-hamburger" id="hamburger" aria-label="Menú" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#quien"       onclick="closeMenu()">Quién soy</a>
+  <a href="#servicios"   onclick="closeMenu()">Servicios</a>
+  <a href="#metodo"      onclick="closeMenu()">Método</a>
+  <a href="#testimonios" onclick="closeMenu()">Resultados</a>
+  <a href="#contacto"    onclick="closeMenu()">Contacto</a>
+  <a href="#servicios" class="m-cta" onclick="closeMenu()">Ver Programas →</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+    <div class="hero-right">
+        <div class="arc-container" id="arcs"></div>
+        <div class="hero-mic">
+            <span class="mic-symbol">🎙️</span>
+            <div class="hero-credential">
+                <span class="cred-label">Créditos de industria</span>
+                <div class="cred-names">
+                    Happy Hogan · UCM<br>
+                    Homelander · The Boys
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="hero-left">
+      <div class="hero-eyebrow">Voz · Dicción · Comunicación</div>
+      <h1>
+        Tu voz<br>
+        <strong>ya existe.</strong>
+        <em>Aprende a usarla.</em>
+      </h1>
+      <p class="hero-tagline">
+        Tienes algo importante que decir. Lo que te falta es la voz que lo haga escuchable, creíble y memorable.
+      </p>
+      <div class="hero-btns">
+        <a href="#servicios" class="btn-primary">Explorar Programas</a>
+        <a href="#quien" class="btn-outline">Conocer a Andrés</a>
+      </div>
+      <div class="use-strip">
+        <div class="use-item"><div class="use-dot"></div><span class="use-text">Podcasts</span></div>
+        <div class="use-item"><div class="use-dot"></div><span class="use-text">Presentaciones</span></div>
+        <div class="use-item"><div class="use-dot"></div><span class="use-text">Videos</span></div>
+        <div class="use-item"><div class="use-dot"></div><span class="use-text">Clases</span></div>
+        <div class="use-item"><div class="use-dot"></div><span class="use-text">Pitches</span></div>
+        <div class="use-item"><div class="use-dot"></div><span class="use-text">Blogs en audio</span></div>
+      </div>
+    </div>
+</section>
+
+<!-- CTA BAND -->
+<div id="cta-band">
+  <div class="cta-text">
+    <h2>Tu voz ya existe.<br><em>Solo necesita</em> <strong>entrenamiento.</strong></h2>
+    <p>Presencial en México · Online para todo el mundo hispanohablante</p>
+  </div>
+  <a href="#contacto" class="btn-white">Empezar Ahora →</a>
+</div>
+
+<!-- EL PROBLEMA -->
+<section id="problema" class="reveal">
+  <div>
+    <div class="s-tag">El punto de partida</div>
+    <h2>Tienes el mensaje.<br><em>La voz es el vehículo.</em></h2>
+    <p class="problema-intro">Cada vez que alguien comunica algo —en pantalla, en vivo, en audio— su voz es el primer filtro. Antes del contenido, viene la voz.</p>
+    <p class="problema-p">Un <strong>podcast mal proyectado</strong> pierde oyentes en los primeros 30 segundos. Una <strong>presentación sin dicción</strong> no convence aunque los datos sean brillantes. Un <strong>video tutorial con voz plana</strong> aburre sin importar lo que enseñe.</p>
+    <p class="problema-p">La buena noticia: la voz no es un talento innato. Es una <strong>técnica. Y la técnica se aprende.</strong></p>
+  </div>
+  <div class="use-cases-grid">
+    <div class="use-case">
+      <span class="uc-icon">🎙️</span>
+      <div class="uc-title">Tienes un blog</div>
+      <p class="uc-desc">Conviértelo en audio con dicción clara y voz que retiene a tu audiencia hasta el final.</p>
+      <div class="uc-need">→ Voz + Dicción</div>
+    </div>
+    <div class="use-case">
+      <span class="uc-icon">📊</span>
+      <div class="uc-title">Tienes una presentación</div>
+      <p class="uc-desc">Proyecta autoridad, maneja los silencios y convierte cada diapositiva en argumento.</p>
+      <div class="uc-need">→ Proyección + Ritmo</div>
+    </div>
+    <div class="use-case">
+      <span class="uc-icon">📹</span>
+      <div class="uc-title">Haces videos</div>
+      <p class="uc-desc">Que tu voz enganche desde los primeros segundos. El algoritmo favorece al que retiene.</p>
+      <div class="uc-need">→ Presencia + Dicción</div>
+    </div>
+    <div class="use-case">
+      <span class="uc-icon">🎓</span>
+      <div class="uc-title">Das clases o talleres</div>
+      <p class="uc-desc">Una voz bien trabajada hace que tus alumnos entiendan más y recuerden más tiempo.</p>
+      <div class="uc-need">→ Claridad + Expresión</div>
+    </div>
+  </div>
+</section>
+
+<!-- QUIÉN ES -->
+<section id="quien" class="reveal">
+  <div class="s-tag">El instructor</div>
+  <h2>Treinta años<br><em>dentro del micrófono.</em></h2>
+  <div class="quien-grid">
+    <div>
+      <div class="quien-card">
+        <div class="quien-initial">AG</div>
+        <div class="quien-name">Andrés García</div>
+        <div class="quien-title">Actor de Doblaje · Instructor de Voz</div>
+        <div class="quien-stats">
+          <div class="qs">
+            <div class="qs-num">15+</div>
+            <div class="qs-label">Años en cabina</div>
+          </div>
+          <div class="qs">
+            <div class="qs-num">80+</div>
+            <div class="qs-label">Producciones</div>
+          </div>
+          <div class="qs">
+            <div class="qs-num">500+</div>
+            <div class="qs-label">Alumnos formados</div>
+          </div>
+          <div class="qs">
+            <div class="qs-num">100%</div>
+            <div class="qs-label">Online · Presencial</div>
+          </div>
+        </div>
+      </div>
+      <div class="cred-box">
+        <div class="cb-label">Créditos destacados</div>
+        <div class="cb-items">
+          <div class="cb-item">
+            <div class="cb-dot"></div>
+            <div class="cb-text"><strong>Happy Hogan</strong> — Universo Cinematográfico Marvel</div>
+          </div>
+          <div class="cb-item">
+            <div class="cb-dot"></div>
+            <div class="cb-text"><strong>Homelander</strong> — The Boys, Amazon Prime</div>
+          </div>
+          <div class="cb-item">
+            <div class="cb-dot"></div>
+            <div class="cb-text">+80 producciones de cine, series y animación</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="quien-bio">
+      <p>
+        Más de quince años frente a un micrófono profesional te enseñan algo que ningún libro puede: <em>cómo suena la diferencia entre una voz que conecta y una que no.</em>
+      </p>
+      <div class="quien-pull">
+        "No enseño a imitar voces de actor. Enseño a encontrar la tuya propia y hacerla funcionar para lo que tú necesitas comunicar."
+      </div>
+      <p>
+        La metodología que Andrés desarrolló nació de una observación simple: <strong>los problemas de comunicación que tenía frente al micrófono eran exactamente los mismos que tenía el emprendedor en su pitch, el youtuber en su intro y el maestro en su clase.</strong>
+      </p>
+      <p>
+        La técnica de doblaje profesional —respiración, articulación, proyección, ritmo— resulta ser el entrenamiento más eficiente para cualquier persona que necesite usar su voz como herramienta de trabajo. No importa si nunca has pisado una cabina de grabación.
+      </p>
+      <a href="#servicios" class="btn-primary" style="margin-top:12px;">Ver Programas</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios" class="reveal">
+  <div class="s-tag">Programas</div>
+  <h2>Para cada <em>forma</em><br><strong>de comunicar.</strong></h2>
+
+  <div class="audience-nav">
+    <button class="an-btn active" onclick="switchAudience('creadores', this)">Creadores de Contenido</button>
+    <button class="an-btn" onclick="switchAudience('profesionales', this)">Profesionales &amp; Emprendedores</button>
+    <button class="an-btn" onclick="switchAudience('academicos', this)">Estudiantes &amp; Académicos</button>
+  </div>
+
+  <!-- CREADORES -->
+  <div class="audience-panel active" id="panel-creadores">
+    <div class="panel-intro">
+      <div class="pi-head">Para quienes<br><strong>crean contenido</strong><br>con su voz.</div>
+      <p class="pi-desc">Tu canal, podcast o comunidad crece cuando tu voz retiene. Aprende las técnicas que usan los profesionales de la cabina para que tu audiencia se quede hasta el final —y regrese.</p>
+    </div>
+    <div class="services-grid">
+      <div class="svc-card featured">
+        <div class="svc-badge">★ Más solicitado</div>
+        <div class="svc-num">01</div>
+        <div class="svc-name">Voz para Creadores</div>
+        <p class="svc-desc">El programa completo: dicción, proyección, ritmo y presencia vocal para YouTube, podcasts y redes sociales.</p>
+        <div class="svc-tags">
+          <span class="svc-tag">Online</span>
+          <span class="svc-tag">Presencial</span>
+          <span class="svc-tag">8 sesiones</span>
+        </div>
+        <a href="#contacto" class="svc-link">Reservar →</a>
+      </div>
+      <div class="svc-card">
+        <div class="svc-num">02</div>
+        <div class="svc-name">Blog a Audio</div>
+        <p class="svc-desc">Aprende a convertir tu contenido escrito en audio que engancha. Locución, pausa y ritmo narrativo.</p>
+        <div class="svc-tags">
+          <span class="svc-tag">Online</span>
+          <span class="svc-tag">Taller</span>
+          <span class="svc-tag">1 día</span>
+        </div>
+        <a href="#contacto" class="svc-link">Conocer más →</a>
+      </div>
+      <div class="svc-card">
+        <div class="svc-num">03</div>
+        <div class="svc-name">Mentoría 1 a 1</div>
+        <p class="svc-desc">Revisión personalizada de tu contenido actual. Identifica qué está frenando tu voz y cómo corregirlo.</p>
+        <div class="svc-tags">
+          <span class="svc-tag">Online</span>
+          <span class="svc-tag">Sesión única</span>
+        </div>
+        <a href="#contacto" class="svc-link">Agendar →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROFESIONALES -->
+  <div class="audience-panel" id="panel-profesionales">
+    <div class="panel-intro">
+      <div class="pi-head">Para quienes<br><strong>venden, presentan</strong><br>y lideran.</div>
+      <p class="pi-desc">Tu voz es tu marca personal más poderosa. En un pitch, una negociación o una presentación de alto impacto, la forma en que suenas puede ser tan decisiva como lo que dices.</p>
+    </div>
+    <div class="services-grid">
+      <div class="svc-card featured">
+        <div class="svc-badge">★ Más solicitado</div>
+        <div class="svc-num">01</div>
+        <div class="svc-name">Voz de Impacto</div>
+        <p class="svc-desc">Presentaciones, pitches y negociaciones. Autoridad, claridad y persuasión vocal para profesionistas.</p>
+        <div class="svc-tags">
+          <span class="svc-tag">Online</span>
+          <span class="svc-tag">Presencial</span>
+          <span class="svc-tag">6 sesiones</span>
+        </div>
+        <a href="#contacto" class="svc-link">Reservar →</a>
+      </div>
+      <div class="svc-card">
+        <div class="svc-num">02</div>
+        <div class="svc-name">Capacitación Corporativa</div>
+        <p class="svc-desc">Talleres para equipos de ventas, liderazgo o atención a clientes. Formato personalizado por empresa.</p>
+        <div class="svc-tags">
+          <span class="svc-tag">Presencial</span>
+          <span class="svc-tag">Equipos</span>
+          <span class="svc-tag">A la medida</span>
+        </div>
+        <a href="#contacto" class="svc-link">Cotizar →</a>
+      </div>
+      <div class="svc-card">
+        <div class="svc-num">03</div>
+        <div class="svc-name">Mentoría Ejecutiva</div>
+        <p class="svc-desc">Sesiones privadas para refinar tu presencia vocal en entornos de alta exigencia profesional.</p>
+        <div class="svc-tags">
+          <span class="svc-tag">Online</span>
+          <span class="svc-tag">Presencial</span>
+          <span class="svc-tag">Personalizado</span>
+        </div>
+        <a href="#contacto" class="svc-link">Agendar →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ACADÉMICOS -->
+  <div class="audience-panel" id="panel-academicos">
+    <div class="panel-intro">
+      <div class="pi-head">Para quienes<br><strong>enseñan, exponen</strong><br>y aprenden.</div>
+      <p class="pi-desc">Que tu voz trabaje a tu favor cuando presentas una tesis, das una clase o defiendes un proyecto. La claridad vocal no es un accesorio —es parte de tu argumento.</p>
+    </div>
+    <div class="services-grid">
+      <div class="svc-card featured">
+        <div class="svc-badge">★ Más solicitado</div>
+        <div class="svc-num">01</div>
+        <div class="svc-name">Voz para Exposiciones</div>
+        <p class="svc-desc">Dicción, ritmo y manejo del nerviosismo escénico. Para estudiantes que necesitan sonar tan bien como piensan.</p>
+        <div class="svc-tags">
+          <span class="svc-tag">Online</span>
+          <span class="svc-tag">Taller</span>
+          <span class="svc-tag">Intensivo</span>
+        </div>
+        <a href="#contacto" class="svc-link">Reservar →</a>
+      </div>
+      <div class="svc-card">
+        <div class="svc-num">02</div>
+        <div class="svc-name">Voz Docente</div>
+        <p class="svc-desc">Para maestros y profesores que quieren mantener la atención del grupo con menos esfuerzo vocal.</p>
+        <div class="svc-tags">
+          <span class="svc-tag">Online</span>
+          <span class="svc-tag">Presencial</span>
+          <span class="svc-tag">4 sesiones</span>
+        </div>
+        <a href="#contacto" class="svc-link">Conocer más →</a>
+      </div>
+      <div class="svc-card">
+        <div class="svc-num">03</div>
+        <div class="svc-name">Mentoría de Tesis</div>
+        <p class="svc-desc">Preparación específica para la defensa oral de tu trabajo. Una sesión enfocada antes del gran día.</p>
+        <div class="svc-tags">
+          <span class="svc-tag">Online</span>
+          <span class="svc-tag">Sesión única</span>
+        </div>
+        <a href="#contacto" class="svc-link">Agendar →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MÉTODO -->
+<section id="metodo" class="reveal">
+  <div class="metodo-intro">
+    <div>
+      <div class="s-tag">Metodología</div>
+      <h2>Técnica de<br><em>cabina profesional,</em><br><strong>aplicada a ti.</strong></h2>
+    </div>
+    <p class="metodo-desc">El entrenamiento que usan los actores de doblaje profesional no fue diseñado para actores. Fue diseñado para dominar el instrumento vocal en condiciones de alta exigencia. Eso es exactamente lo que necesitas tú.</p>
+  </div>
+  <div class="steps-row">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-title">Diagnóstico</div>
+      <p class="step-desc">Identificamos tu punto de partida real: respiración, articulación, ritmo y presencia.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-title">Técnica</div>
+      <p class="step-desc">Ejercicios de doblaje adaptados a tu contexto específico de comunicación.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-title">Aplicación</div>
+      <p class="step-desc">Practicamos con tu contenido real: tus videos, presentaciones o textos.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-title">Resultado</div>
+      <p class="step-desc">Sales con una voz que funciona para lo que necesitas, no para el escenario.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section id="testimonios" class="reveal">
+  <div class="s-tag">Resultados</div>
+  <h2>Lo que cambia<br><em>cuando trabajas tu voz.</em></h2>
+  <div class="testi-layout">
+    <div class="testi-card">
+      <span class="testi-context">Creador de contenido</span>
+      <div class="testi-mark">"</div>
+      <p class="testi-q">Tenía 4 años haciendo YouTube y nunca me habían dicho por qué mi retención era tan baja. En la primera sesión con Andrés entendí exactamente qué estaba haciendo mal con mi voz. En dos semanas mis métricas cambiaron.</p>
+      <div class="testi-author">
+        <div class="testi-av">👤</div>
+        <div>
+          <div class="testi-name">Roberto S.</div>
+          <div class="testi-role">YouTuber — Canal de tecnología, 80K subs</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <span class="testi-context">Emprendedor</span>
+      <div class="testi-mark">"</div>
+      <p class="testi-q">El taller de presentaciones fue un antes y después para mi pitch de inversión. Cerré la ronda.</p>
+      <div class="testi-author">
+        <div class="testi-av">👤</div>
+        <div>
+          <div class="testi-name">Camila F.</div>
+          <div class="testi-role">Fundadora, startup fintech</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <span class="testi-context">Docente universitaria</span>
+      <div class="testi-mark">"</div>
+      <p class="testi-q">Doy clases desde hace 12 años y siempre terminaba con la voz agotada. Andrés me enseñó que estaba usando mal mi respiración todo ese tiempo.</p>
+      <div class="testi-author">
+        <div class="testi-av">👤</div>
+        <div>
+          <div class="testi-name">Dra. Lourdes M.</div>
+          <div class="testi-role">Profesora — UNAM, Facultad de Ciencias</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="reveal">
+  <div class="s-tag">Preguntas frecuentes</div>
+  <h2>Todo lo que<br><em>necesitas saber</em> antes.</h2>
+  <div class="faq-wrap">
+    <div class="faq-aside">
+      <p>Si tu pregunta no está aquí, escríbenos directamente. Respondemos en menos de 24 horas.</p>
+      <a href="#contacto" class="btn-outline">Escribir a Andrés</a>
+    </div>
+    <div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">¿Necesito experiencia previa o conocimientos de actuación?<span class="faq-icon">+</span></button>
+        <div class="faq-a">No. Los programas están diseñados para personas que nunca han trabajado su voz de forma profesional. El punto de partida es tu voz tal como es hoy, con tus hábitos actuales.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">¿Cómo funciona el formato online?<span class="faq-icon">+</span></button>
+        <div class="faq-a">Las sesiones online se realizan por videollamada. Solo necesitas micrófono (el de tu laptop o audífonos funciona para empezar), cámara y buena conexión. Se graba cada sesión para que puedas revisarla después.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">¿Cuánto tiempo tarda en verse resultados?<span class="faq-icon">+</span></button>
+        <div class="faq-a">La mayoría de los alumnos reporta cambios perceptibles desde la primera o segunda sesión. Los resultados consolidados —cambios de hábito que se mantienen solos— generalmente llegan entre la cuarta y sexta sesión.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">¿Se entrega constancia o certificado?<span class="faq-icon">+</span></button>
+        <div class="faq-a">Sí. Al completar cualquier programa recibes una constancia digital con firma de Andrés, descripción del contenido y horas de formación. Válida para incluir en LinkedIn o tu portafolio profesional.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">¿Los programas corporativos se pueden adaptar a nuestra empresa?<span class="faq-icon">+</span></button>
+        <div class="faq-a">Sí, totalmente. El formato corporativo se diseña a la medida del equipo, su industria y sus objetivos específicos de comunicación. La cotización incluye diagnóstico previo sin costo.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="reveal">
+  <div class="s-tag">Contacto</div>
+  <h2>El primer paso<br><em>es el más fácil.</em></h2>
+  <div class="contact-wrap">
+    <div>
+      <p style="color:var(--muted); font-size:15px; margin-bottom:28px; line-height:1.9;">
+        Selecciona lo que mejor describe tu situación. Te respondo personalmente en menos de 24 horas.
+      </p>
+      <div class="contact-paths">
+        <a href="#" class="cp-item">
+          <span class="cp-icon">🎙️</span>
+          <div>
+            <div class="cp-label">Programa formativo</div>
+            <div class="cp-title">Quiero inscribirme a un programa o taller</div>
+          </div>
+        </a>
+        <a href="#" class="cp-item">
+          <span class="cp-icon">🤝</span>
+          <div>
+            <div class="cp-label">Mentoría personal</div>
+            <div class="cp-title">Quiero una sesión 1 a 1 con Andrés</div>
+          </div>
+        </a>
+        <a href="#" class="cp-item">
+          <span class="cp-icon">💼</span>
+          <div>
+            <div class="cp-label">Empresa o institución</div>
+            <div class="cp-title">Quiero capacitación para mi equipo</div>
+          </div>
+        </a>
+        <a href="#" class="cp-item">
+          <span class="cp-icon">🎬</span>
+          <div>
+            <div class="cp-label">Proyecto de locución</div>
+            <div class="cp-title">Quiero cotizar voz en off para un proyecto</div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <form class="contact-form" onsubmit="return false">
+      <div class="cf-row">
+        <div class="cf-group">
+          <label class="cf-label">Nombre</label>
+          <input type="text" placeholder="Tu nombre completo">
+        </div>
+        <div class="cf-group">
+          <label class="cf-label">Correo</label>
+          <input type="email" placeholder="tu@correo.com">
+        </div>
+      </div>
+      <div class="cf-group">
+        <label class="cf-label">Me describe mejor como</label>
+        <select>
+          <option value="">Selecciona tu perfil</option>
+          <option>Creador de contenido (YouTube, podcast, redes)</option>
+          <option>Emprendedor / Profesionista</option>
+          <option>Ejecutivo o líder de equipo</option>
+          <option>Estudiante o académico</option>
+          <option>Docente o instructor</option>
+          <option>Empresa (capacitación corporativa)</option>
+          <option>Otro</option>
+        </select>
+      </div>
+      <div class="cf-group">
+        <label class="cf-label">Me interesa</label>
+        <select>
+          <option value="">¿Qué programa te interesa?</option>
+          <option>Programa Voz para Creadores</option>
+          <option>Programa Voz de Impacto (Profesionales)</option>
+          <option>Taller Blog a Audio</option>
+          <option>Mentoría 1 a 1</option>
+          <option>Capacitación Corporativa</option>
+          <option>Locución / Voz en off</option>
+          <option>Aún no lo tengo claro, quiero orientación</option>
+        </select>
+      </div>
+      <div class="cf-group">
+        <label class="cf-label">Cuéntame algo (opcional)</label>
+        <textarea placeholder="¿Para qué usas tu voz hoy? ¿Qué te gustaría mejorar?"></textarea>
+      </div>
+      <button type="submit" class="btn-primary" style="width:100%; padding:18px; font-size:12px;">
+        Enviar → Andrés responde en &lt;24 hrs
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft-name">Andrés <span>García</span></div>
+  <ul class="ft-links">
+    <li><a href="#">Instagram</a></li>
+    <li><a href="#">TikTok</a></li>
+    <li><a href="#">YouTube</a></li>
+    <li><a href="#">LinkedIn</a></li>
+    <li><a href="#">Spotify</a></li>
+  </ul>
+  <div class="ft-right">© 2026 Andrés García<br>Todos los derechos reservados</div>
+</footer>
+
+<script>
+// ── CONCENTRIC ARCS ──
+const arcsEl = document.getElementById('arcs');
+for (let i = 0; i < 7; i++) {
+  const arc = document.createElement('div');
+  arc.className = 'arc';
+  const s = 120 + i * 80;
+  arc.style.cssText = `width:${s}px;height:${s}px;animation-delay:${i * 0.4}s;`;
+  arcsEl.appendChild(arc);
+}
+
+// ── NAV SCROLL ──
+window.addEventListener('scroll', () => {
+  document.getElementById('main-nav').classList.toggle('scrolled', scrollY > 40);
+});
+
+// ── AUDIENCE TABS ──
+function switchAudience(id, btn) {
+  document.querySelectorAll('.an-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.audience-panel').forEach(p => p.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('panel-' + id).classList.add('active');
+}
+
+// ── FAQ ──
+function toggleFaq(btn) {
+  const item = btn.parentElement;
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+
+// ── SCROLL REVEAL ──
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.08 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// ── MOBILE MENU ──
+function toggleMenu() {
+  const menu = document.getElementById('mobile-menu');
+  const btn  = document.getElementById('hamburger');
+  menu.classList.toggle('open');
+  btn.classList.toggle('open');
+  document.body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
+}
+function closeMenu() {
+  document.getElementById('mobile-menu').classList.remove('open');
+  document.getElementById('hamburger').classList.remove('open');
+  document.body.style.overflow = '';
+}
+// Close menu on resize to desktop
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 768) closeMenu();
+});
+</script>
+</body>
+</html>

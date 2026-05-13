@@ -54,10 +54,11 @@ nav {
 nav.scrolled { box-shadow: 0 2px 24px rgba(26,26,34,0.06); }
 
 .nav-name {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 19px; font-weight: 400;
-  letter-spacing: 0.5px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 19px; font-weight: 800;
+  letter-spacing: -0.5px;
   color: var(--ink); text-decoration: none;
+  text-transform: uppercase;
 }
 .nav-name span { color: var(--primary); }
 
@@ -141,8 +142,8 @@ nav.scrolled { box-shadow: 0 2px 24px rgba(26,26,34,0.06); }
   font-family: 'DM Mono', monospace;
 }
 .cred-names {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 15px; font-style: italic;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 15px; 
   color: rgba(247,244,238,0.7); line-height: 1.6;
 }
 
@@ -157,7 +158,7 @@ nav.scrolled { box-shadow: 0 2px 24px rgba(26,26,34,0.06); }
 }
 
 h1 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: clamp(48px, 5.5vw, 80px);
   font-weight: 300; line-height: 1.05;
   letter-spacing: -0.5px;
@@ -167,14 +168,14 @@ h1 strong {
   font-weight: 600; display: block;
   color: var(--slate);
 }
-h1 em {
-  font-style: italic; color: var(--primary);
+h1 em { font-weight: 800;
+   color: var(--primary);
   display: block;
 }
 
 .hero-tagline {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 20px; font-style: italic;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 20px; 
   color: var(--muted); margin: 24px 0 40px;
   line-height: 1.6; max-width: 400px;
   border-left: 2px solid var(--primary-dim);
@@ -213,7 +214,7 @@ h1 em {
   border-top: 1px solid var(--bg-alt);
   display: flex; gap: 28px; flex-wrap: wrap;
 }
-.use-item {
+.use-item { font-weight: 800;
   display: flex; align-items: center; gap: 8px;
 }
 .use-dot {
@@ -236,13 +237,13 @@ section { padding: 110px 60px; }
 .s-tag::before { content: '—'; opacity: 0.5; }
 
 h2 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: clamp(36px, 4.5vw, 60px);
   font-weight: 300; line-height: 1.1;
   letter-spacing: -0.3px;
   margin-bottom: 20px;
 }
-h2 em { font-style: italic; color: var(--primary); }
+h2 em { font-weight: 800;  color: var(--primary); }
 h2 strong { font-weight: 600; }
 
 /* ── PROBLEMA / PROPUESTA ── */
@@ -253,13 +254,13 @@ h2 strong { font-weight: 600; }
   gap: 100px; align-items: center;
 }
 #problema h2 { color: var(--bg-main); }
-#problema h2 em { color: var(--primary-l); }
+#problema h2 em { font-weight: 800; color: var(--primary-l); }
 #problema .s-tag { color: var(--primary-l); }
 #problema .s-tag::before { color: rgba(212,145,106,0.4); }
 
 .problema-intro {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 22px; font-style: italic;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 22px; 
   color: rgba(247,244,238,0.6); line-height: 1.7;
   margin-bottom: 32px;
 }
@@ -286,7 +287,7 @@ h2 strong { font-weight: 600; }
 }
 .uc-icon { font-size: 28px; margin-bottom: 16px; display: block; }
 .uc-title {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 20px; font-weight: 600;
   color: var(--bg-main); margin-bottom: 8px;
   line-height: 1.2;
@@ -322,13 +323,13 @@ h2 strong { font-weight: 600; }
   background: linear-gradient(to right, var(--primary), transparent);
 }
 .quien-initial {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 80px; font-weight: 600;
   color: var(--primary-dim); line-height: 1;
   margin-bottom: -10px;
 }
 .quien-name {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 28px; font-weight: 400;
   color: var(--ink); line-height: 1.2; margin-bottom: 6px;
 }
@@ -346,7 +347,7 @@ h2 strong { font-weight: 600; }
   background: var(--bg-main); padding: 18px 16px;
 }
 .qs-num {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 32px; font-weight: 600;
   color: var(--primary); line-height: 1;
 }
@@ -362,7 +363,7 @@ h2 strong { font-weight: 600; }
   font-family: 'DM Mono', monospace;
 }
 .cb-items { display: flex; flex-direction: column; gap: 8px; }
-.cb-item {
+.cb-item { font-weight: 800;
   display: flex; align-items: center; gap: 10px;
 }
 .cb-dot { width: 5px; height: 5px; background: var(--primary); border-radius: 50%; flex-shrink: 0; }
@@ -374,9 +375,9 @@ h2 strong { font-weight: 600; }
   line-height: 1.9; margin-bottom: 20px;
 }
 .quien-bio p strong { color: var(--ink); font-weight: 500; }
-.quien-bio p em {
-  font-family: 'Cormorant Garamond', serif;
-  font-style: italic; font-size: 18px; color: var(--primary);
+.quien-bio p em { font-weight: 800;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+   font-size: 18px; color: var(--primary);
 }
 
 .quien-pull {
@@ -384,8 +385,8 @@ h2 strong { font-weight: 600; }
   padding: 28px 32px;
   background: var(--primary-dim);
   border-left: 3px solid var(--primary);
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 22px; font-style: italic;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 22px; 
   color: var(--slate); line-height: 1.6;
 }
 
@@ -418,7 +419,7 @@ h2 strong { font-weight: 600; }
   gap: 60px; margin-bottom: 40px; align-items: start;
 }
 .pi-head {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 26px; font-weight: 300; line-height: 1.3;
   color: var(--slate);
 }
@@ -441,7 +442,7 @@ h2 strong { font-weight: 600; }
   margin-bottom: 20px; opacity: 0.7;
 }
 .svc-name {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 22px; font-weight: 600;
   line-height: 1.2; margin-bottom: 12px;
   color: var(--ink);
@@ -518,7 +519,7 @@ h2 strong { font-weight: 600; }
   border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
   margin: 0 auto 24px;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 22px; font-weight: 600; color: var(--primary);
   transition: background 0.3s, border-color 0.3s;
 }
@@ -527,7 +528,7 @@ h2 strong { font-weight: 600; }
   border-color: var(--primary);
 }
 .step-title {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 18px; font-weight: 600;
   margin-bottom: 10px; color: var(--ink);
 }
@@ -548,14 +549,14 @@ h2 strong { font-weight: 600; }
   background: var(--ink);
 }
 .testi-mark {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 60px; color: var(--primary);
   opacity: 0.3; line-height: 1; margin-bottom: 8px;
 }
 .testi-card:first-child .testi-mark { opacity: 0.5; }
 .testi-q {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 20px; font-style: italic;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 20px; 
   line-height: 1.7; margin-bottom: 28px;
   color: var(--slate);
 }
@@ -597,7 +598,7 @@ h2 strong { font-weight: 600; }
 .faq-aside p { font-size: 15px; color: var(--muted); line-height: 1.8; margin-top: 20px; }
 .faq-aside .btn-outline { margin-top: 28px; display: inline-block; }
 
-.faq-item {
+.faq-item { font-weight: 800;
   border-bottom: 1px solid var(--muted);
 }
 .faq-q {
@@ -646,12 +647,12 @@ h2 strong { font-weight: 600; }
   border: 1px solid rgba(255,255,255,0.1); border-radius: 50%;
 }
 .cta-text h2 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: clamp(32px, 4vw, 52px);
   font-weight: 300; color: var(--white);
   line-height: 1.1; margin-bottom: 16px;
 }
-.cta-text h2 em { font-style: italic; }
+.cta-text h2 em { font-weight: 800;  }
 .cta-text h2 strong { font-weight: 600; }
 .cta-text p { color: rgba(255,255,255,0.7); font-size: 16px; }
 .btn-white {
@@ -672,7 +673,7 @@ h2 strong { font-weight: 600; }
   gap: 80px; margin-top: 60px;
 }
 .contact-paths { display: flex; flex-direction: column; gap: 10px; }
-.cp-item {
+.cp-item { font-weight: 800;
   display: flex; align-items: center; gap: 16px;
   padding: 20px 24px; background: var(--bg-main);
   border: 1px solid var(--bg-alt);
@@ -717,7 +718,7 @@ footer {
   align-items: center; gap: 40px;
 }
 .ft-name {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 18px; color: var(--bg-main);
 }
 .ft-name span { color: var(--primary); }
@@ -830,7 +831,7 @@ footer {
     display: block; padding: 18px 0;
     border-bottom: 1px solid var(--bg-alt);
     text-decoration: none; color: var(--ink);
-    font-size: 24px; font-family: 'Cormorant Garamond', serif;
+    font-size: 24px; font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 300; transition: color 0.2s;
   }
   .mobile-menu a:hover { color: var(--primary); }
